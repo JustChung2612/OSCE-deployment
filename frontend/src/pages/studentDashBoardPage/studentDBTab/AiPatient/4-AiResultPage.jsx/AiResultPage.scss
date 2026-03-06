@@ -1,0 +1,148 @@
+.Ai_result_title {
+  margin: 2rem;
+  text-align: center;
+}
+
+.Ai_assess_container {
+  margin: 2rem auto;
+  padding: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  .table_score,
+  .evaluation_result,
+  .qualitative_feedback {
+    //border: 2px solid coral;
+    width: 1200px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  /* ================= TABLE ================= */
+  .table_score {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      border: 2px solid black;
+      
+
+      th,
+      td {
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;
+        background: #ffffff;
+        padding: 20px;
+        font-size: 20px;
+      }
+      td:first-child {
+        width: 20rem;
+      }
+
+      th {
+        background: #a8a5a5;
+      }
+
+      .fail {
+        color: #FF5A5A ;
+        font-weight: bold;
+      }
+      .pass {
+        color: #237227 ;
+        font-weight: bold;
+      }
+    }
+  }
+
+  /* ================= CRITERIA ================= */
+  .criteria {
+    margin-top: 2rem;
+    
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    .criteria_boxes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      h4 {
+        margin-bottom: 1rem ;
+      }
+    }
+
+    .box {
+      flex: 1;
+      min-width: 250px;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid;
+    }
+
+    .covered {
+      background: #e8f5e9;
+      border-color: #4caf50;
+    }
+
+    .partial {
+      background: #fff8e1;
+      border-color: #ff9800;
+    }
+
+    .missed {
+      background: #fdecea;
+      border-color: #f44336;
+    }
+
+    ul li { list-style-type: none; }
+  }
+
+  /* ================= QUALITATIVE ================= */
+  .qualitative_container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .qual_box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid;
+  }
+
+  .needs_improvement {
+    background: #fdecea;
+    border-color: #f44336;
+  }
+
+  .good {
+    background: #e8f5e9;
+    border-color: #4caf50;
+  }
+
+  .feedback_item {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+}
+
+.result_back_btn {
+  margin: 20px 0;
+
+  button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

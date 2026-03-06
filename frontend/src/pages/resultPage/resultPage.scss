@@ -1,0 +1,30 @@
+.true_ans {
+    background-color: hsl(161, 94%, 30%);
+}
+
+.false_ans {
+     background-color: hsl(9, 74%, 49%) ;
+}
+
+.comment {
+    h4 {
+        margin: 10px 0 10px 0;
+    }
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+        width: 95%;
+    }
+}
+
+.result-top {
+    color: rgb(81, 79, 79);
+    border: 2px solid black;
+    max-width: 1280px; margin: 0 auto; padding: 25px 18px;
+    display: flex;
+    justify-content: center;
+    h5 {
+        font-size: large;
+    }
+    span{ color: black;}
+}

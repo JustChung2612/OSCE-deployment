@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "chuan_doan": "Đợt cấp suy thận mạn giai đoạn 5 kèm hội chứng urê máu cao",
+    "co_quan": "Thận – Tiết niệu",
+    "trieu_chung": "Chóng mặt, nôn, tiểu ít",
+    "do_kho": "Khó",
+    "doi_tuong": "Sinh viên y khoa"
+  },
+  "ten_benh_an": "Suy thận mạn giai đoạn cuối có đợt cấp",
+  "totalPoints": 10,
+  "benh_an_tinh_huong": {
+    "thong_tin_benh_nhan": {
+      "ho_ten": "Nguyễn Văn Đ",
+      "tuoi": 46,
+      "gioi_tinh": "Nam",
+      "nghe_nghiep": "Buôn bán",
+      "ly_do_nhap_vien": "Chóng mặt, nôn"
+    },
+    "benh_su": {
+      "mo_ta1": "Trước nhập viện bệnh nhân đau bụng, tiêu chảy sau ăn, kèm sốt thoáng qua.",
+      "mo_ta2": "Sau đó xuất hiện chóng mặt nhiều, buồn nôn và nôn liên tục, tiểu ít dần.",
+      "mo_ta3": "Nhập viện trong tình trạng tăng huyết áp, thiểu niệu, phải lọc máu cấp cứu nhiều lần."
+    },
+    "tien_can": [
+      "Tăng huyết áp 4 năm",
+      "Cắt thận trái do u thận 3 năm trước",
+      "U thận tái phát và phẫu thuật 2 năm trước",
+      "Nước tiểu giảm dần, nhiều bọt trong 6 tháng"
+    ],
+    "luoc_qua_cac_co_quan": [
+      "Tiêu hóa: đau bụng, tiêu chảy",
+      "Thần kinh: chóng mặt",
+      "Tim mạch: tăng huyết áp",
+      "Tiết niệu: tiểu ít, nước tiểu có bọt"
+    ],
+    "kham_lam_sang": [
+      "Bệnh tỉnh, tiếp xúc tốt, da niêm nhạt",
+      "Huyết áp 170/90 mmHg",
+      "Mạch 80 lần/phút",
+      "Có phù nhẹ hai chi dưới",
+      "Tim đều, âm thổi tâm thu 3/6",
+      "Phổi thông khí tốt, không ran",
+      "Bụng mềm, gan không to",
+      "Hông trái có sẹo mổ cắt thận"
+    ]
+  },
+  "cau_hoi": [
+    {
+      "id": 1,
+      "noi_dung": "Triệu chứng chính khiến bệnh nhân nhập viện là gì?",
+      "kieu": "radio",
+      "lua_chon": [
+        "Chóng mặt và nôn",
+        "Phù toàn thân",
+        "Đau ngực",
+        "Khó thở cấp"
+      ],
+      "dap_an_dung": "Chóng mặt và nôn",
+      "diem": 1
+    },
+    {
+      "id": 2,
+      "noi_dung": "Những yếu tố nào gợi ý bệnh nhân có suy thận mạn từ trước?",
+      "kieu": "checkbox",
+      "lua_chon": [
+        "Tiền sử cắt một thận",
+        "Thiểu niệu kéo dài",
+        "Thiếu máu mạn",
+        "Sốt cao cấp tính"
+      ],
+      "dap_an_dung": [
+        "Tiền sử cắt một thận",
+        "Thiểu niệu kéo dài",
+        "Thiếu máu mạn"
+      ],
+      "diem": 2
+    },
+    {
+      "id": 3,
+      "noi_dung": "Chỉ số nào phản ánh mức độ suy thận nặng nhất ở bệnh nhân?",
+      "kieu": "radio",
+      "lua_chon": [
+        "GFR < 15 ml/phút/1,73m2",
+        "Huyết áp tăng",
+        "Thiếu máu",
+        "Phù chi dưới"
+      ],
+      "dap_an_dung": "GFR < 15 ml/phút/1,73m2",
+      "diem": 1
+    },
+    {
+      "id": 4,
+      "noi_dung": "Các biểu hiện nào thuộc hội chứng urê máu cao?",
+      "kieu": "checkbox",
+      "lua_chon": [
+        "Buồn nôn, nôn",
+        "Xuất huyết dưới da",
+        "Tiêu chảy",
+        "Hạ huyết áp"
+      ],
+      "dap_an_dung": [
+        "Buồn nôn, nôn",
+        "Xuất huyết dưới da"
+      ],
+      "diem": 1
+    },
+    {
+      "id": 5,
+      "noi_dung": "Chẩn đoán xác định của bệnh nhân là gì?",
+      "kieu": "text",
+      "goi_y": "Bao gồm bệnh nền và tình trạng hiện tại",
+      "dap_an_dung": "Đợt cấp suy thận mạn giai đoạn 5 kèm hội chứng urê máu cao",
+      "diem": 2
+    },
+    {
+      "id": 6,
+      "noi_dung": "Biện pháp điều trị quan trọng nhất giúp cải thiện triệu chứng nôn kéo dài ở bệnh nhân?",
+      "kieu": "radio",
+      "lua_chon": [
+        "Lọc máu ngoài thận",
+        "Truyền dịch",
+        "Thuốc chống nôn",
+        "Kháng sinh"
+      ],
+      "dap_an_dung": "Lọc máu ngoài thận",
+      "diem": 1
+    },
+    {
+      "id": 7,
+      "noi_dung": "Hướng điều trị lâu dài phù hợp cho bệnh nhân này là gì?",
+      "kieu": "checkbox",
+      "lua_chon": [
+        "Lọc máu định kỳ",
+        "Ghép thận nếu có điều kiện",
+        "Ngưng kiểm soát huyết áp",
+        "Chế độ ăn hạn chế muối và kali"
+      ],
+      "dap_an_dung": [
+        "Lọc máu định kỳ",
+        "Ghép thận nếu có điều kiện",
+        "Chế độ ăn hạn chế muối và kali"
+      ],
+      "diem": 2
+    }
+  ]
+}

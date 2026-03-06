@@ -1,0 +1,115 @@
+.adminNavbar{
+    height: 70px;
+   
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    background-color: #ffff;
+
+    .adNavWrapper {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .adNavSearch{
+            display: flex;
+            line-height: 30px;
+            align-items: center;
+            position: relative;
+            max-width: 600px;
+
+            input {
+                width: 100%;
+                font-size: 17px;
+                height: 45px;
+                line-height: 30px;
+                padding: 0 5rem;
+                padding-left: 3rem;
+                border: 2px solid transparent;
+                border-radius: 10px;
+                outline: none;
+                background-color: #8a8f95;
+                color: #0d0c22;
+                transition: .5s ease;
+            }
+
+            input::placeholder {
+                color: #ffffff;
+            }
+
+            input:focus, input:hover {
+                outline: none;
+                border-color: rgba(129, 140, 248);
+                background-color: #fff;
+                box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+            }
+
+            .icon {
+                position: absolute;
+                left: 1rem;
+                fill: none;
+                width: 1.7rem;
+                height: 1.7rem;
+            }
+        }
+
+        
+
+        .adNavItems{
+            // border: 2px solid orange ;
+            display: flex;
+            align-items: center;
+
+            .adNavItem{
+                // border: 2px solid #B6771D;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                border-radius: 10px;
+                padding: 10px ;
+                font-size: 1.1rem;
+                font-weight: 550 ;
+                border: none;
+                
+                .user{
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-right: 10px;
+                    }
+
+                }
+
+            }
+
+            .notUser{
+                text-decoration: none;
+                color: rgb(252, 252, 252);
+                background: #F25912 ;
+                gap: 10px;
+                transition: 0.2s ease;
+
+                &:hover {
+                    background-color: #b4420d ;
+                }
+                
+                
+            }
+
+        }
+
+
+
+
+    }
+}

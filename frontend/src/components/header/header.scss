@@ -1,0 +1,116 @@
+.header{
+//   border-bottom: 0.5px solid rgb(231, 228, 228);
+  
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 999;
+
+    background: rgba(255, 255, 255, 0.41);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #34d399;
+        margin-left: 20px ;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+
+        .osceLink , .libraryLink{
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 500 ;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            position: relative;
+            gap: 5px;
+
+            .user {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                gap: 10px;
+
+                .avatarLink{
+                    text-decoration: none;
+                    color: black;
+
+                    .avatar{
+                        display: flex;
+                        align-items: center;
+                        background-color: #ffff;
+                        padding: 5px 10px 5px 10px;
+                        border-radius: 10px;
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+            }
+
+            .navButton {
+                border: none;
+                border-radius: 10px;
+                background-color: #14b8a6 ;
+                padding: 10px ;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: rgb(255, 255, 255);
+                margin-right: 10px;
+                text-decoration: none;
+                
+            }
+
+            button{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+
+        }
+
+
+    }
+
+
+
+  }
+
+
+}

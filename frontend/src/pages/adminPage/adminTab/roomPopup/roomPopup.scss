@@ -1,0 +1,158 @@
+/* ✅ createRoomPopup.scss — basic layout */
+
+
+
+/* ✅ UPDATED: Overlay now only darkens right area and allows drag on left side */
+.createRoomPopup__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 480px; /* popup width + padding buffer */
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none; /* allow interaction behind except popup itself */
+  z-index: 1000;
+}
+
+.createRoomPopup {
+  pointer-events: all;
+  width: 450px;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.createRoomPopup-header-container {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+
+  .createRoomPopup-header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .close-btn {
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    display: flex; align-items: center;
+    transition: 0.2s ease;
+
+    &:hover {
+      background-color: #14b8a6;
+    }
+  }
+}
+
+.createRoomPopup__footer {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.createRoomPopup__dropzone {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px dashed #14b8a6;
+  border-radius: 12px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+.added-patient-container{
+  margin-top: 20px;
+  background: #d8f9f5;
+  border-radius: 8px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+
+  .added-patient {
+    background: #d8f9f5;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem 0;
+    width: 100%;
+  }
+
+  .delete-icon-btn{
+    margin-right: 5px;
+    background: #ffff ;
+    color: #ED3F27  ;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    transition: all 0.5s ease;
+    
+  }
+   .delete-icon-btn:hover {
+     background: #ED3F27;
+     color: #ffff   ;
+   }
+}
+
+.finish-btn, .next-btn, .cancel-btn {
+  background: #14b8a6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: #0d9488;
+  }
+}
+
+.cancel-btn {
+  background: #e53e3e;
+  &:hover {
+    background-color: #bc2d2d;
+  }
+}
+
+.pagination-bar {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: 1rem;
+
+  .page-dot {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    &.active {
+      background: #14b8a6;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.pagination-section{
+  //border: 2px solid teal;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+
+}

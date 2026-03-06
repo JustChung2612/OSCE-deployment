@@ -1,0 +1,12 @@
+.examRoomListContainer {
+  padding: 1.5rem;
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .examRoomGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../loginPage/loginPage.scss" as login;
+
+.signup-container { @extend .login-container; }
+.signup-wrapper   { @extend .login-wrapper; }
+.signup-card      { @extend .login-card; }
+.signup-card-wrapper { @extend .login-card-wrapper; }
+.signup-header    { @extend .login-header; }
+.signup-form      { @extend .login-form; }
+
+.signup-btn { @extend .login-btn; }
+
+

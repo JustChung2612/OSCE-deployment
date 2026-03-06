@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "chuan_doan": "Lao phổi tái phát AFB âm / Giãn phế quản biến chứng ho ra máu",
+    "co_quan": "Hô hấp",
+    "trieu_chung": "Ho khạc đàm kéo dài, ho ra máu, sốt nhẹ về chiều, sụt cân",
+    "do_kho": "Khó",
+    "doi_tuong": "Người cao tuổi"
+  },
+
+  "ten_benh_an": "Bệnh án lao phổi tái phát trên nền giãn phế quản",
+
+  "totalPoints": 0,
+
+  "benh_an_tinh_huong": {
+    "thong_tin_benh_nhan": {
+      "ho_ten": "Cao Thị Châu",
+      "tuoi": 60,
+      "gioi_tinh": "Nữ",
+      "nghe_nghiep": "Làm ruộng",
+      "ly_do_nhap_vien": "Ho khạc đàm kéo dài, ho ra máu"
+    },
+
+    "benh_su": {
+      "mo_ta1": "Khoảng 4 tháng trước nhập viện, bệnh nhân xuất hiện ho từng cơn, khạc đàm trắng xanh nhiều vào buổi sáng (~20ml), kèm mệt mỏi, ăn uống kém, sốt nhẹ về chiều.",
+      "mo_ta2": "Bệnh nhân tự mua kháng sinh (Erythromycin), thuốc long đàm, giảm ho nhưng không rõ loại. Uống thuốc khoảng 3 ngày thì đỡ ho, sau 1–2 tuần ho tái phát và không đáp ứng thuốc.",
+      "mo_ta3": "Ngày 07/08 bệnh nhân ho ra máu đỏ tươi, loãng, không lẫn thức ăn, lượng khoảng 50ml. Sau đó nhập viện, được chuyển qua nhiều khoa và cuối cùng chẩn đoán lao phổi tái phát."
+    },
+
+    "tien_can": [
+      "Tiền sử lao phổi cách đây 30 năm",
+      "Giãn phế quản được chẩn đoán 25 năm trước",
+      "Không đái tháo đường",
+      "Không hen phế quản",
+      "Không dị ứng thuốc, thức ăn",
+      "Không hút thuốc, không uống rượu"
+    ],
+
+    "luoc_qua_cac_co_quan": [
+      "Toàn thân: tỉnh táo, tiếp xúc tốt, thể trạng gầy, BMI 16.8",
+      "Da niêm mạc nhợt nhạt, ngứa da, nhiều dát tăng sắc tố",
+      "Hô hấp: phổi trái nghe nhiều ran ẩm",
+      "Tuần hoàn: mạch đều, T1 T2 rõ, không âm bệnh lý",
+      "Tiêu hoá: bụng mềm, không đau, gan lách không sờ thấy",
+      "Thận tiết niệu: không tiểu buốt, không tiểu rắt",
+      "Thần kinh: không dấu khu trú",
+      "Mắt – tai mũi họng: không bất thường"
+    ],
+
+    "kham_lam_sang": [
+      "Mạch 80–85 lần/phút",
+      "Nhiệt độ 37–37.5°C",
+      "Huyết áp 90/60 – 120/80 mmHg",
+      "Nhịp thở 20 lần/phút",
+      "SpO2 97%",
+      "Cân nặng 36–38kg",
+      "Chiều cao 150cm"
+    ]
+  },
+
+  "cau_hoi": [
+  {
+    "id": 1,
+    "noi_dung": "Triệu chứng chính khiến bệnh nhân nhập viện là gì?",
+    "kieu": "radio",
+    "lua_chon": [
+      "Ho khạc đàm kéo dài",
+      "Ho ra máu",
+      "Khó thở cấp",
+      "Đau ngực dữ dội"
+    ],
+    "dap_an_dung": "Ho ra máu",
+    "diem": 1
+  },
+  {
+    "id": 2,
+    "noi_dung": "Các triệu chứng toàn thân mà bệnh nhân gặp phải bao gồm những gì?",
+    "kieu": "checkbox",
+    "lua_chon": [
+      "Sốt nhẹ về chiều",
+      "Sụt cân",
+      "Mệt mỏi",
+      "Phù hai chân",
+      "Vã mồ hôi đêm"
+    ],
+    "dap_an_dung": [
+      "Sốt nhẹ về chiều",
+      "Sụt cân",
+      "Mệt mỏi",
+      "Vã mồ hôi đêm"
+    ],
+    "diem": 2
+  },
+  {
+    "id": 3,
+    "noi_dung": "Bệnh nhân có tiền sử bệnh lý hô hấp nào quan trọng?",
+    "kieu": "checkbox",
+    "lua_chon": [
+      "Lao phổi",
+      "Giãn phế quản",
+      "Hen phế quản",
+      "COPD"
+    ],
+    "dap_an_dung": [
+      "Lao phổi",
+      "Giãn phế quản"
+    ],
+    "diem": 2
+  },
+  {
+    "id": 4,
+    "noi_dung": "Đặc điểm của ho ra máu ở bệnh nhân là gì?",
+    "kieu": "radio",
+    "lua_chon": [
+      "Máu đỏ tươi, loãng, có bọt khí",
+      "Máu sẫm màu, lẫn thức ăn",
+      "Máu đông từng cục lớn",
+      "Máu kèm đau ngực dữ dội"
+    ],
+    "dap_an_dung": "Máu đỏ tươi, loãng, có bọt khí",
+    "diem": 1
+  },
+  {
+    "id": 5,
+    "noi_dung": "Kết quả X-quang phổi cho thấy tổn thương chủ yếu ở đâu?",
+    "kieu": "radio",
+    "lua_chon": [
+      "Phổi phải",
+      "Phổi trái",
+      "Hai phổi đều không tổn thương",
+      "Tràn dịch màng phổi"
+    ],
+    "dap_an_dung": "Phổi trái",
+    "diem": 1
+  },
+  {
+    "id": 6,
+    "noi_dung": "CT scanner lồng ngực ghi nhận những bất thường nào?",
+    "kieu": "checkbox",
+    "lua_chon": [
+      "Giãn phế quản",
+      "Xơ kẽm xẹp phổi",
+      "Thâm nhiễm kẽ phế bào",
+      "Tràn dịch màng phổi",
+      "Hạch trung thất lớn"
+    ],
+    "dap_an_dung": [
+      "Giãn phế quản",
+      "Xơ kẽm xẹp phổi",
+      "Thâm nhiễm kẽ phế bào"
+    ],
+    "diem": 2
+  },
+  {
+    "id": 7,
+    "noi_dung": "Kết quả xét nghiệm AFB đàm của bệnh nhân như thế nào?",
+    "kieu": "radio",
+    "lua_chon": [
+      "AFB dương tính",
+      "AFB âm tính",
+      "Không làm xét nghiệm",
+      "Kết quả không rõ"
+    ],
+    "dap_an_dung": "AFB âm tính",
+    "diem": 1
+  },
+  {
+    "id": 8,
+    "noi_dung": "Chẩn đoán phù hợp nhất của bệnh nhân là gì?",
+    "kieu": "radio",
+    "lua_chon": [
+      "Ung thư phổi",
+      "Viêm phổi cộng đồng",
+      "Giãn phế quản biến chứng ho ra máu",
+      "Lao phổi tái phát AFB âm"
+    ],
+    "dap_an_dung": "Lao phổi tái phát AFB âm",
+    "diem": 1
+  },
+  {
+    "id": 9,
+    "noi_dung": "Những yếu tố nào gợi ý lao phổi ở bệnh nhân?",
+    "kieu": "checkbox",
+    "lua_chon": [
+      "Tiền sử lao phổi",
+      "Ho khạc đàm kéo dài",
+      "Sốt nhẹ về chiều",
+      "CRP tăng",
+      "AFB dương tính"
+    ],
+    "dap_an_dung": [
+      "Tiền sử lao phổi",
+      "Ho khạc đàm kéo dài",
+      "Sốt nhẹ về chiều",
+      "CRP tăng"
+    ],
+    "diem": 2
+  },
+  {
+    "id": 10,
+    "noi_dung": "Hãy nêu hướng xử trí chính cho bệnh nhân trong trường hợp này.",
+    "kieu": "text",
+    "goi_y": "Điều trị kháng lao theo phác đồ phù hợp, theo dõi ho ra máu và dinh dưỡng",
+    "dap_an_dung": "Điều trị kháng lao theo phác đồ, theo dõi ho ra máu, cải thiện dinh dưỡng",
+    "diem": 3
+  }
+]
+
+}
