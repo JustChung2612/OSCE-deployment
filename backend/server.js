@@ -37,8 +37,6 @@ app.use("/api/exam-submissions", examSubmissionRoutes);
 app.use("/api/ai-cases", aiPatientCaseRoutes);
 
 // connectDB_local();
-connectDB_atlas().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Listening on Port ${PORT}`);
-  });
-});
+connectDB_atlas();
+
+export default app;
