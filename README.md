@@ -32,7 +32,7 @@ git clone + link
 1. cd frontend 
 ```
 ```
-2. npm run dev
+2. npm install
 ```
 ```
 3. npm run dev
@@ -45,7 +45,7 @@ git clone + link
 2. npm install
 ```
 ```
-3. npm start
+3. npm run dev
 ```
 
 ## 2. Create File named <ins> .env </ins>
