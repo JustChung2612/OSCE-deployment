@@ -111,7 +111,7 @@
     min-height: 85vh;
   
     .intro__flex {
-        //border: 3px solid #F25912;
+        // border: 3px solid #F25912;
         height: 40rem ;
         width: 85%;
         display: flex;
@@ -320,6 +320,34 @@
             transform: translate(290px) rotate(10deg);
           }
 
+          // Animation
+        
+          // @keyframes rotateBox {
+          //     from {
+          //       transform: rotate(-10deg);
+          //     }
+          //     to {
+          //       transform: translate(var(--move-x)) rotate(var(--rotate-angle));
+          //     }
+          // }
+
+          .box1 {
+            --move-x: 0px;
+            --rotate-angle: 0deg;
+            z-index: 100;
+          }
+
+          .box2 {
+            --move-x: 180px;
+            --rotate-angle: 10deg;
+            z-index: 99;
+          }
+
+          .box3 {
+            --move-x: 290px;
+            --rotate-angle: 10deg;
+            z-index: 98 ;
+          }
         
         }
         
