@@ -69,6 +69,21 @@ const HomePage = () => {
 
   return (
     <div className="home">
+      <section className="account-demo">
+        <h3>Tài Khoản Demo</h3>
+        <div className="account-container" >
+          <div className="acc-box">
+            <h4>ADMIN:</h4>
+            <p> <b>Email:</b> &nbsp; <span>  admin1@gmail.com </span> </p>
+            <p> <b>Password:</b> &nbsp; <span> abc123456 </span> </p>
+          </div>
+          <div className="acc-box">
+            <h4>STUDENT:</h4>
+            <p> <b>Email:</b> &nbsp; <span> user1@gmail.com </span> </p>
+            <p> <b>Password:</b> &nbsp; <span> abc123456 </span> </p>
+          </div>
+        </div>
+      </section>
       {/* Section 1 - Giới thiệu nền tảng (nền trắng) */}
       <section className="section section--intro">
           <div className="intro__flex">
