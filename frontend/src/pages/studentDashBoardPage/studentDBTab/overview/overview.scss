@@ -1,51 +1,265 @@
 section { 
-    // border: 2px solid #BF4646; 
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .brief_info {
-    padding: 15px;
-    display: flex; justify-content: center; flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto 32px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
     
-    .info_card{
-        display: flex; flex-direction: column; align-items: center; gap: 15px;
-        padding: 5px;
-        // border: 2px solid #BF4646;
-        max-width: 20rem;
-        h1 { font-size: 20px; }
-        p { font-size:  3rem;}
+    .info_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 28px 40px;
+        min-width: 280px;
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+        
+        h1 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #475569;
+            text-align: center;
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+        p {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+            padding: 8px 24px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            min-width: 80px;
+            text-align: center;
+        }
     }
 }
 
 .main_Exam_Room_info {
-    h1 { margin-bottom: 20px; }
+    max-width: 1280px;
+    margin: 0 auto 32px;
+    padding: 24px 20px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin: 0 0 24px 0;
+    }
+    
+    .muted {
+        color: #64748b;
+        font-size: 1rem;
+        text-align: center;
+        padding: 40px 20px;
+        background: white;
+        border-radius: 8px;
+        border: 1px dashed #cbd5e1;
+    }
+    
     .examRoomCard-container-list {
-        // border: 1px solid #46bf60;
-        display: flex; justify-content: space-around; gap: 20px; flex-wrap: wrap;
-        padding-bottom: 20px;
-        .examRoomCard-container{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 8px;
+        
+        .examRoomCard-container {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                transform: translateY(-2px);
+            }
+            
             .card__header {
-                .row{
-                    .r_code {font-weight: 600; font-size: 17px; }
+                .row {
+                    .r_code {
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: #3b82f6;
+                    }
                 }
             }
+            
             .card__body {
                 .card_content {
-                    
-                    display: flex; align-items: center;
+                    display: flex;
+                    align-items: center;
                     gap: 15px;
                     margin-bottom: 12px;
+                    
                     .key {
                         font-size: 15px;
-                        color: #5c5a5a;
+                        color: #64748b;
+                        font-weight: 500;
                     }
+                    
                     .value {
                         font-size: 17px;
                         font-weight: 700;
+                        color: #0f172a;
                     }
+                }
+                
+                .btn {
+                    width: 100%;
+                    margin-top: 8px;
                 }
             }
         }
     }
 }
 
+.Ai_Exam_Room_info {
+    max-width: 1280px;
+    margin: 0 auto 32px;
+    padding: 24px 20px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin: 0 0 24px 0;
+    }
+    
+    .cardGrid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        
+        @media (max-width: 980px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .card {
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        background: #ffffff;
+        overflow: hidden;
+        box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+        cursor: pointer;
+        transition: transform 0.08s ease, box-shadow 0.08s ease;
+        
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+        }
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15), 0 12px 28px rgba(15, 23, 42, 0.09);
+        }
+        
+        &__thumb {
+            height: 140px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            &--pink {
+                background: #f6cbd2;
+            }
+            
+            &--dark {
+                background: #1f2937;
+                color: #ffffff;
+            }
+        }
+        
+        &__tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            height: 24px;
+            padding: 0 10px;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            color: #0f172a;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            backdrop-filter: blur(6px);
+        }
+        
+        &__body {
+            padding: 12px 14px 14px;
+        }
+        
+        &__title {
+            font-size: 14px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        
+        &__meta {
+            font-size: 13px;
+            color: #475569;
+            display: flex;
+            gap: 6px;
+            align-items: baseline;
+        }
+        
+        &__metaLabel {
+            font-weight: 700;
+            color: #334155;
+        }
+    }
+    
+    .AiResultCard-container-list {
+        min-height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 8px;
+        border: 1px dashed #cbd5e1;
+        
+        &:empty::after {
+            content: 'Chưa có dữ liệu';
+            color: #94a3b8;
+            font-style: italic;
+        }
+    }
+}
